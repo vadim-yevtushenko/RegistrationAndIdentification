@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources><string name="app_name">Регистрационное приветствие</string>
+    <string name="exit">выход</string>
+    <string name="profile">профиль</string>
+    <string name="login_main">Логин</string>
+    <string name="password_main">пароль</string>
+    <string name="registration_main">Регистрация</string>
+    <string name="sign_in_main">Войти</string>
+    <string name="new_login">новый логин</string>
+    <string name="new_password">новый пароль</string>
+    <string name="ok">Oк</string>
+    <string name="back">Назад</string>
+    <string name="old_password_set">текущий пароль</string>
+    <string name="change_profile">сменить профиль</string>
+    <string name="exit_from_app">выйти из приложения</string></resources>

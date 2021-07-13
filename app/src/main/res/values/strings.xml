@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Registration greeting</string>
+    <string name="exit">exit</string>
+    <string name="profile">profile</string>
+    <string name="login_main">Login</string>
+    <string name="password_main">password</string>
+    <string name="registration_main">Registration</string>
+    <string name="sign_in_main">Sign In</string>
+    <string name="new_login">new login</string>
+    <string name="new_password">new password</string>
+    <string name="ok">OK</string>
+    <string name="back">Back</string>
+    <string name="old_password_set">old password</string>
+    <string name="change_profile">change profile</string>
+    <string name="exit_from_app">exit from app</string>
+</resources>
