@@ -59,16 +59,16 @@ public class StartActivity extends AppCompatActivity {
 
     private void selectExit() {
         AlertDialog.Builder alertDialog = new AlertDialog.Builder(this)
-                .setTitle("App will be closed")
-                .setMessage("Do you want leave your profile?")
-                .setPositiveButton("YES", (dialog, which) -> {
+                .setTitle(R.string.ad_title)
+                .setMessage(R.string.ad_message)
+                .setPositiveButton(R.string.ad_positive, (dialog, which) -> {
                     changeEntry();
                     finish();
                 })
-                .setNegativeButton("NO", (dialog, which) -> {
+                .setNegativeButton(R.string.ad_negative, (dialog, which) -> {
                     finish();
                 })
-                .setNeutralButton("CANCEL", (dialog, which) -> {
+                .setNeutralButton(R.string.ad_neutral, (dialog, which) -> {
 
                 });
         alertDialog.show();

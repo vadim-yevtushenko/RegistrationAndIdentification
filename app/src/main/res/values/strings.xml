@@ -13,4 +13,9 @@
     <string name="old_password_set">old password</string>
     <string name="change_profile">change profile</string>
     <string name="exit_from_app">exit from app</string>
+    <string name="ad_title">App will be closed</string>
+    <string name="ad_message">Do you want leave your profile?</string>
+    <string name="ad_positive">YES</string>
+    <string name="ad_negative">NO</string>
+    <string name="ad_neutral">CANCEL</string>
 </resources>
