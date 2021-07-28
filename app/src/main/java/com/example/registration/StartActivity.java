@@ -12,7 +12,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.TextView;
 
-public class StartActivity extends AppCompatActivity {
+public class StartActivity extends AppCompatActivity implements Keys {
 
     private TextView tvGreeting;
     private SharedPreferences sharedPreferences;
@@ -25,13 +25,13 @@ public class StartActivity extends AppCompatActivity {
         setContentView(R.layout.activity_start);
 
         tvGreeting = findViewById(R.id.tvGreeting);
-        sharedPreferences = getSharedPreferences(MainActivity.PREF_REG, MODE_PRIVATE);
-        sharedPreferencesCheck = getSharedPreferences(MainActivity.PREF_CHECKER, MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(PREF_REG, MODE_PRIVATE);
+        sharedPreferencesCheck = getSharedPreferences(PREF_CHECKER, MODE_PRIVATE);
         showGreeting();
     }
 
     private void showGreeting() {
-        String userLogin = sharedPreferences.getString(MainActivity.KEY_LOGIN, "user");
+        String userLogin = sharedPreferences.getString(KEY_LOGIN, "user");
         tvGreeting.setText("Hello, " + userLogin);
     }
 
@@ -76,7 +76,7 @@ public class StartActivity extends AppCompatActivity {
 
     private void changeEntry() {
         editor = sharedPreferencesCheck.edit();
-        editor.putBoolean(MainActivity.KEY_ENTRY, false);
+        editor.putBoolean(KEY_ENTRY, false);
         editor.apply();
     }
 

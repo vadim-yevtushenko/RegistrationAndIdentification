@@ -8,7 +8,7 @@
     <string name="sign_in_main">Войти</string>
     <string name="new_login">новый логин</string>
     <string name="new_password">новый пароль</string>
-    <string name="ok">Oк</string>
+    <string name="sign_up">Зарегистрироваться</string>
     <string name="back">Назад</string>
     <string name="old_password_set">текущий пароль</string>
     <string name="change_profile">сменить профиль</string>
@@ -18,4 +18,10 @@
     <string name="ad_positive">ДА</string>
     <string name="ad_negative">НЕТ</string>
     <string name="ad_neutral">ОТМЕНА</string>
+    <string name="password">Пароль:</string>
+    <string name="retype_password">Повторить пароль:</string>
+    <string name="sign_in">ВОЙТИ</string>
+    <string name="not_a_member_yet">Еще не зарегистрированы?</string>
+    <string name="already_have_an_account">Уже имеете аккаунт?</string>
+    <string name="user_name">Имя пользователя:</string>
 </resources>

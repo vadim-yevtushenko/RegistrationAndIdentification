@@ -8,7 +8,6 @@
     <string name="sign_in_main">Sign In</string>
     <string name="new_login">new login</string>
     <string name="new_password">new password</string>
-    <string name="ok">OK</string>
     <string name="back">Back</string>
     <string name="old_password_set">old password</string>
     <string name="change_profile">change profile</string>
@@ -18,4 +17,11 @@
     <string name="ad_positive">YES</string>
     <string name="ad_negative">NO</string>
     <string name="ad_neutral">CANCEL</string>
+    <string name="password">Password:</string>
+    <string name="retype_password">Retype Password:</string>
+
+    <string name="not_a_member_yet">Not a member yet?</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="user_name">User name:</string>
+
 </resources>

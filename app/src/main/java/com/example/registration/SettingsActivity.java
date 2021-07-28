@@ -2,7 +2,6 @@ package com.example.registration;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class SettingsActivity extends AppCompatActivity {
+public class SettingsActivity extends AppCompatActivity implements Keys{
     private EditText etOldPass;
     private EditText etNewLogin;
     private EditText etNewPass;
@@ -27,7 +26,7 @@ public class SettingsActivity extends AppCompatActivity {
 
         initElements();
         initListeners();
-        sharedPreferences = getSharedPreferences(MainActivity.PREF_REG, MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences(PREF_REG, MODE_PRIVATE);
     }
 
     private void initListeners() {
@@ -40,18 +39,18 @@ public class SettingsActivity extends AppCompatActivity {
 
     private void registration(View view) {
         String oldPass = etOldPass.getText().toString();
-        String oldPass2 = sharedPreferences.getString(MainActivity.KEY_PASSWORD, "");
+        String oldPass2 = sharedPreferences.getString(KEY_PASSWORD, "");
         String userLogin = etNewLogin.getText().toString();
         String password = etNewPass.getText().toString();
         String password2 = etNewPass2.getText().toString();
         if (oldPass.equals(oldPass2)){
             editor = sharedPreferences.edit();
             if (!userLogin.equals("")){
-                editor.putString(MainActivity.KEY_LOGIN, userLogin);
+                editor.putString(KEY_LOGIN, userLogin);
             }
             if (!password.equals("")){
                 if (password.equals(password2)){
-                    editor.putString(MainActivity.KEY_PASSWORD, password);
+                    editor.putString(KEY_PASSWORD, password);
                 }else {
                     Toast.makeText(this, "passwords not same", Toast.LENGTH_SHORT).show();
                 }
@@ -72,6 +71,6 @@ public class SettingsActivity extends AppCompatActivity {
         etNewPass = findViewById(R.id.etNewPass);
         etNewPass2 = findViewById(R.id.etNewPass2);
         bBack = findViewById(R.id.bBack);
-        bOk = findViewById(R.id.bOk);
+        bOk = findViewById(R.id.bSignUp);
     }
 }
