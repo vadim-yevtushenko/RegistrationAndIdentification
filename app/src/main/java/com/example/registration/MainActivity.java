@@ -45,12 +45,9 @@ public class MainActivity extends AppCompatActivity implements Keys {
 
         initElements();
         initListeners();
-
         registrationFragment = new RegistrationFragment();
         identificationFragment = new IdentificationFragment();
-
         setFragmentOnFrame();
-
     }
 
     private void initListeners() {
@@ -118,7 +115,6 @@ public class MainActivity extends AppCompatActivity implements Keys {
             editor = sharedPreferencesCheck.edit();
             editor.putBoolean(KEY_ENTRY, true);
             editor.apply();
-
             editor = sharedPreferences.edit();
             editor.putString(KEY_LOGIN, userLogin);
             editor.putString(KEY_PASSWORD, password);

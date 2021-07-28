@@ -1,7 +1,6 @@
 package com.example.registration;
 
 public interface Keys {
-
     String PREF_REG = "reg";
     String PREF_CHECKER = "checker";
     String KEY_ENTRY = "entry";
